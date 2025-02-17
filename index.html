@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Aniversário</title>
+    
+    <style>
+       body {
+    text-align: center;
+    background-color: #8646FA;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+h1 {
+    font-size: 3em;
+    margin-top: 20px;
+}
+img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+.message {
+    font-size: 1.5em;
+    margin: 20px;
+}
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+@media (max-width: 600px) {
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+    </style>
+</head>
+<body>
+    <h1>Feliz Aniversário Evelyn! ❤️</h1>
+    
+    <img src="imagens/foto-1.jpg" alt="">
+    <img src="imagens/foto-2.jpg" alt="">
+    <img src="imagens/foto-3.jpg" alt="">
+    <img src="imagens/foto-4.jpg" alt="">
+    <img src="imagens/foto-5.jpg" alt="">
+    <div><p class="message">Minha vida ficou mais feliz quando você chegou, você é o sol que me dá vida e ilumina meu dia, todos os dias eu penso o quanto eu sou sortudo por você do meu lado comigo, nós práticamente crescemos juntos, e vamos continuar crescendo, quero acompanhar cada detalhe de nossas vidas com você, vamos conquistar nosso, apê, nosso carro, nossa familia, eu nunca me imaginava pensando coisas desse tipo, então para mim você é práticamente um milagre na minha vida, alguém que me faz querer se tornar o melhor de mim para você, eu tenho orgulho de você, de você estar conquistando suas coisas, seu emprego, sua faculdade, mas (spoiler) isso é só o começo da nossa jornada na vida, temos muito ainda o que viver e experimentar juntos, para mim não importa onde ou o que seja, contanto que seja com você, eu te amo Evelyn.</p>
+    </div>
+   
+    <canvas id="fireworks"></canvas>
+    <script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.10.2/dist/index.umd.js"></script>
+    <script>
+        const container = document.getElementById("fireworks");
+        const fireworks = new Fireworks.default(container, { autoresize: true, opacity: 0.5 });
+        fireworks.start();
+    </script>
+</body>
+</html>
